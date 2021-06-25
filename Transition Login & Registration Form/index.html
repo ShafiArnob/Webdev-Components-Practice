@@ -11,10 +11,47 @@
   <div class="hero">
     <div class="form-box">
       <div class="button-box">
-        <button type="button" class="toggle-btn">Log In</button>
-        <button type="button" class="toggle-btn">Register</button>
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
       </div>
+      <div class="social-icons">
+        <img src="fb.png" alt="">
+        <img src="tw.png" alt="">
+        <img src="gp.png" alt="">
+      </div>
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box" >
+        <span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="email" class="input-field" placeholder="Email Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box" >
+        <span>I agree to the terms and conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
     </div>
   </div>
+  <script>
+    var log = document.getElementById("login")
+    var reg = document.getElementById("register")
+    var btn = document.getElementById("btn")
+
+    function register(){
+      log.style.left = "-400px"
+      reg.style.left = "50px"
+      btn.style.left = "110px"
+    }
+    function login(){
+      log.style.left = "50px"
+      reg.style.left = "450px"
+      btn.style.left = "0px"
+    }
+  </script>
 </body>
 </html>
