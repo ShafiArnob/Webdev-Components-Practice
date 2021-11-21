@@ -1,0 +1,58 @@
+
+body{
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #171818 0%, #000000 74%);
+  height: 100vh;
+}
+#window{
+  margin-top: 50px;
+  background-color:rgb(33, 36, 41);
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+}
+.swapbox_select{
+  width: 50%;
+  float: left;
+}
+.swapbox{
+  overflow: auto;
+  margin: 20px 0;
+  padding: 10px;
+  background-color:rgb(59, 59, 59);
+  border-radius: 20px;
+  border: 2px solid rgb(133, 133, 133);
+  /* border-style: inset; */
+  /* border-image: initial; */
+
+}
+.swapbox_select p{
+  font-size: 20px;
+  margin-top: 10px;
+}
+input{
+  background-color: rgb(59, 59, 59);
+  color: white;
+  /* width: 50%; */
+  width: 300px;
+  height: 50px;
+  border: none;
+}
+input:focus, input:valid{
+  outline: 0;
+  font-size: 20px;
+}
+.btn-swap{
+  border-radius: 20px;
+  /* font-size: 16px; */
+  color: rgb(80, 144, 234);
+  background-color: rgba(21, 61, 111, 0.44);
+  border-color: #0d6efd;
+
+  height: 50px;
+}
+.btn-swap:hover{
+  color: rgb(80, 144, 234);
+  background-color: rgba(19, 54, 98, 0.44);
+}
